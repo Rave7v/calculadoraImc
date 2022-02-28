@@ -7,6 +7,7 @@ class segundoViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //self.view.backgroundColor = UIColor(named: "blue")
     }
     
     @IBAction func calculaNuevi(_ sender: UIButton) {
