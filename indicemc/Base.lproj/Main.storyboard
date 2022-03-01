@@ -197,6 +197,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VuV-hf-aEg"/>
+                    <connections>
+                        <outlet property="imageView" destination="1Kg-vX-8P9" id="Q9a-Uh-QmD"/>
+                        <outlet property="mensajeLbl" destination="Bcg-FX-ykc" id="0yx-fD-Xlr"/>
+                        <outlet property="valorIMCLbl" destination="D93-22-AK4" id="GN0-qe-aWa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="66R-pu-FhB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2u6-nx-mXp">

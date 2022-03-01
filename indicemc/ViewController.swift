@@ -3,10 +3,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var cerebroCalculadora = CerebroCalculadora()
     
-    var altura:Double = 1.6
-    var peso:Double = 75
-    var imc:Double = 0.0
+    var altura:Float = 1.6
+    var peso:Float = 75
+    var imc:Float = 0.0
     @IBOutlet weak var valorAltura: UILabel!
     @IBOutlet weak var valorPeso: UILabel!
     override func viewDidLoad() {
@@ -15,21 +16,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calcularBtn(_ sender: UIButton) {
-        print("calcular")
+        cerebroCalculadora.calcularIMC(peso: peso, altura: altura)
+        
         performSegue(withIdentifier: "calcular", sender: self)
-        imc = peso / (altura * altura)
-        print(imc)
+
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let objDestino = segue.destination as! segundoViewController
+        objDestino.valorImc = cerebroCalculadora.retornarValorIMC()
+        objDestino.mensaje = cerebroCalculadora.darAviso()
+        objDestino.color = cerebroCalculadora.retonarColor()
     }
     
     @IBAction func sliderAltura(_ sender: UISlider) {
         //print(sender.value)
         valorAltura.text = "\(String(format: "%.2f", sender.value)) m"
-        altura = Double(sender.value)
+        altura = Float(sender.value)
     }
     
     @IBAction func sliderPeso(_ sender: UISlider) {
         valorPeso.text = "\(String(format: "%.1f", sender.value)) kg"
-        peso = Double(sender.value)
+        peso = Float(sender.value)
     }
 }
 
