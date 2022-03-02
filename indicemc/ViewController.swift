@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         objDestino.valorImc = cerebroCalculadora.retornarValorIMC()
         objDestino.mensaje = cerebroCalculadora.darAviso()
         objDestino.color = cerebroCalculadora.retonarColor()
+        objDestino.image = cerebroCalculadora.retornarImagen()
     }
     
     @IBAction func sliderAltura(_ sender: UISlider) {

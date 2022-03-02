@@ -54,7 +54,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Calcular">
-                                    <color key="titleColor" red="0.18011468650000001" green="0.18805426359999999" blue="0.2005238235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="calcularBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TdM-EA-GYe"/>
@@ -140,7 +140,7 @@
                                     <constraint firstAttribute="height" constant="33" id="IbN-p4-Zy6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24,6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D93-22-AK4">
@@ -149,7 +149,7 @@
                                     <constraint firstAttribute="height" constant="35" id="l3s-M5-u5m"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tu indice de masa corporal es muy bajo, trata de comer mas alimentos como proteinas, frutas y vegetales" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcg-FX-ykc">
@@ -158,11 +158,15 @@
                                     <constraint firstAttribute="height" constant="82" id="d99-d8-yLF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bajo de peso" translatesAutoresizingMaskIntoConstraints="NO" id="1Kg-vX-8P9">
-                                <rect key="frame" x="80" y="374" width="255" height="154"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sobre peso" translatesAutoresizingMaskIntoConstraints="NO" id="1Kg-vX-8P9">
+                                <rect key="frame" x="79.5" y="374" width="255" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="Crd-2S-ddJ"/>
+                                    <constraint firstAttribute="width" constant="255" id="cus-o1-71H"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1S-tO-J3g">
                                 <rect key="frame" x="141" y="588" width="123" height="30"/>
@@ -170,8 +174,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="e6A-0D-Jym"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Calcular de nuevo">
-                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="calculaNuevi:" destination="RmK-r5-Eeg" eventType="touchUpInside" id="Mw4-vy-sfV"/>
@@ -183,16 +188,14 @@
                         <constraints>
                             <constraint firstItem="OxO-wl-qRF" firstAttribute="top" secondItem="zfG-Gi-zcZ" secondAttribute="top" constant="78" id="DO0-3l-zvs"/>
                             <constraint firstItem="D93-22-AK4" firstAttribute="leading" secondItem="zfG-Gi-zcZ" secondAttribute="leading" constant="174" id="PYm-eX-Lxe"/>
+                            <constraint firstItem="1Kg-vX-8P9" firstAttribute="top" secondItem="Bcg-FX-ykc" secondAttribute="bottom" constant="58" id="SFt-aq-OjM"/>
                             <constraint firstItem="D93-22-AK4" firstAttribute="top" secondItem="OxO-wl-qRF" secondAttribute="bottom" constant="40" id="Vse-66-ucd"/>
-                            <constraint firstItem="s1S-tO-J3g" firstAttribute="top" secondItem="1Kg-vX-8P9" secondAttribute="bottom" constant="60" id="Z7R-FM-t7A"/>
                             <constraint firstItem="Bcg-FX-ykc" firstAttribute="leading" secondItem="XtT-D7-Nl7" secondAttribute="leadingMargin" id="eu6-Za-ova"/>
-                            <constraint firstItem="Bcg-FX-ykc" firstAttribute="centerX" secondItem="1Kg-vX-8P9" secondAttribute="centerX" id="gYe-T6-02c"/>
                             <constraint firstItem="zfG-Gi-zcZ" firstAttribute="bottom" secondItem="s1S-tO-J3g" secondAttribute="bottom" constant="190" id="gdp-Bh-lv8"/>
+                            <constraint firstItem="1Kg-vX-8P9" firstAttribute="centerX" secondItem="Bcg-FX-ykc" secondAttribute="centerX" id="j0y-z7-eQy"/>
                             <constraint firstItem="s1S-tO-J3g" firstAttribute="leading" secondItem="zfG-Gi-zcZ" secondAttribute="leading" constant="141" id="nhp-OJ-6ah"/>
-                            <constraint firstItem="1Kg-vX-8P9" firstAttribute="top" secondItem="Bcg-FX-ykc" secondAttribute="bottom" constant="58" id="pLP-Jy-s80"/>
                             <constraint firstItem="OxO-wl-qRF" firstAttribute="centerX" secondItem="Bcg-FX-ykc" secondAttribute="centerX" id="qTh-42-lsV"/>
                             <constraint firstItem="Bcg-FX-ykc" firstAttribute="trailing" secondItem="XtT-D7-Nl7" secondAttribute="trailingMargin" id="rEQ-F5-Klc"/>
-                            <constraint firstItem="1Kg-vX-8P9" firstAttribute="leading" secondItem="zfG-Gi-zcZ" secondAttribute="leading" constant="80" id="vkW-zx-1ha"/>
                             <constraint firstItem="Bcg-FX-ykc" firstAttribute="top" secondItem="D93-22-AK4" secondAttribute="bottom" constant="48" id="wU6-oZ-eX2"/>
                         </constraints>
                     </view>
@@ -216,11 +219,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bajo de peso" width="600" height="365"/>
         <image name="imc" width="300" height="168"/>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="sobre peso" width="1600" height="1073"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
